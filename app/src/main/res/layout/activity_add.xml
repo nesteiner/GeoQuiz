@@ -15,37 +15,9 @@
               android:textAlignment="gravity"
               android:gravity="center|start"/>
 
-
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="0dp"
-                  android:layout_weight="15"
-                  android:orientation="vertical">
-
-        <RadioGroup android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-            <LinearLayout android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_gravity="center"
-                          android:layout_marginTop="20dp">
-                <RadioButton android:id="@+id/true_choice"
-                             android:text="@string/correct"
-                             android:layout_width="wrap_content"
-                             android:layout_height="wrap_content"
-                             android:layout_marginEnd="20dp"/>
-                <RadioButton android:id="@+id/false_choice"
-                             android:layout_width="wrap_content"
-                             android:layout_height="wrap_content"
-                             android:text="@string/wrong"
-                             android:layout_marginStart="20dp"/>
-            </LinearLayout>
-        </RadioGroup>
-
-        <Button android:id="@+id/add_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:text="@string/submit"/>
-    </LinearLayout>
+    <fragment android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:name="com.example.geoquiz.fragment.FragmentAdd"
+              android:id="@+id/fragment_add"
+              android:layout_weight="15"/>
 </LinearLayout>
