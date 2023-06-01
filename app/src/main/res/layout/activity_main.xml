@@ -50,21 +50,30 @@
         <LinearLayout android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:gravity="center"
-                      android:orientation="horizontal"
+                      android:orientation="vertical"
                       android:layout_marginTop="50dp">
-            <ImageButton android:id="@+id/last_imagebutton"
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_marginEnd="20dp"
-                         android:src="@drawable/ic_arrow_left"
-                         android:contentDescription="@string/last"/>
-            <ImageButton android:id="@+id/next_imagebutton"
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_marginStart="20dp"
-                         android:src="@drawable/ic_arrow_right"
-                         android:contentDescription="@string/next"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
 
+                <ImageButton android:id="@+id/last_imagebutton"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginEnd="20dp"
+                             android:src="@drawable/ic_arrow_left"
+                             android:contentDescription="@string/last"/>
+                <ImageButton android:id="@+id/next_imagebutton"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="20dp"
+                             android:src="@drawable/ic_arrow_right"
+                             android:contentDescription="@string/next"/>
+            </LinearLayout>
+
+            <Button android:id="@+id/check_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

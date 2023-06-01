@@ -14,6 +14,9 @@
     <string name="has_x_topic">题库中共有x道题目表</string>
     <string name="start_answer">开始答题</string>
     <string name="add_topic">添加题目</string>
+    <string name="check">查看题目情况</string>
+    <string name="all">查看全部题目</string>
+    <string name="clear">清除所有题目表</string>
 
     <string name="q1">中国的首都是北京</string>
     <string name="q2">太平洋比大西洋大</string>

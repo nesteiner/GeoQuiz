@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Button submitButton;
     Button falseButton;
     Button cheatButton;
+    Button checkButton;
     ImageButton nextButton;
     ImageButton lastButton;
     QuizViewModel quizViewModel;
@@ -90,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         lastButton = findViewById(R.id.last_imagebutton);
         submitButton = findViewById(R.id.submit_button);
         cheatButton = findViewById(R.id.cheat_button);
+        checkButton = findViewById(R.id.check_button);
 
         AppDatabase database = StartActivity.database;
         QuestionDao questionDao = database.questionDao();
@@ -142,8 +144,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         cheatButton.setOnClickListener(view -> {
-            Intent intent0 = CheatActivity.newIntent(this, quizViewModel.currentQuestionAnswer());
-            startActivityForResult(intent0, REQUEST_ACTIVITY_CHEAT);
+            Intent intent = CheatActivity.newIntent(this, quizViewModel.currentQuestionAnswer());
+            startActivityForResult(intent, REQUEST_ACTIVITY_CHEAT);
+        });
+
+        checkButton.setOnClickListener(view -> {
+            Intent intent = CheckActivity.newIntent(this);
+            startActivity(intent);
         });
     }
 

@@ -21,4 +21,14 @@
             android:layout_height="wrap_content"
             android:text="@string/add_topic"
             android:layout_marginTop="20dp"/>
+    <Button android:id="@+id/start_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all"
+            android:layout_marginTop="20dp"/>
+    <Button android:id="@+id/start_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:layout_marginTop="20dp"/>
 </LinearLayout>

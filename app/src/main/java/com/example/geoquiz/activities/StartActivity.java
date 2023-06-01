@@ -22,6 +22,8 @@ public class StartActivity extends AppCompatActivity {
     TextView startTitle;
     Button startOpen;
     Button startAdd;
+    Button startAll;
+    Button startClear;
     QuizViewModel quizViewModel;
 
     static final String QUESTION_LENGTH = "com.example.geoquiz.start.question.length";
@@ -35,6 +37,8 @@ public class StartActivity extends AppCompatActivity {
         startTitle = findViewById(R.id.start_title);
         startOpen = findViewById(R.id.start_open);
         startAdd = findViewById(R.id.start_add);
+        startAll = findViewById(R.id.start_all);
+        startClear = findViewById(R.id.start_clear);
 
         if (database == null) {
             database = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "data.db").allowMainThreadQueries().build();
@@ -57,6 +61,16 @@ public class StartActivity extends AppCompatActivity {
         startAdd.setOnClickListener(view -> {
             Intent intent = AddActivity.newIntent(this);
             startActivityForResult(intent, REQUSET_ACTIVITY_ADD);
+        });
+
+        startAll.setOnClickListener(view -> {
+            Intent intent = AllActivity.newIntent(this);
+            startActivity(intent);
+        });
+
+        startClear.setOnClickListener(view -> {
+            database.questionDao().deleteAll();
+            Toast.makeText(this, "已清除所有题目", Toast.LENGTH_SHORT).show();
         });
     }
 

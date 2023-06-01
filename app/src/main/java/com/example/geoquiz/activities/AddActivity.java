@@ -60,7 +60,7 @@ public class AddActivity extends AppCompatActivity {
 
         addButton.setOnClickListener(view -> {
             String questionText = addText.getText().toString();
-            Question question = new Question(questionText, true, false, false);
+            Question question = new Question(questionText, trueChoice.isChecked(), false, false);
             questionDao.insertOne(question);
             Toast.makeText(this, "添加成功", Toast.LENGTH_SHORT).show();
 

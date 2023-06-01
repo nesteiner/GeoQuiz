@@ -1,9 +1,6 @@
 package com.example.geoquiz.daos;
 
-import androidx.room.Dao;
-import androidx.room.Delete;
-import androidx.room.Insert;
-import androidx.room.Query;
+import androidx.room.*;
 import com.example.geoquiz.models.Question;
 
 import java.io.Serializable;
@@ -18,10 +15,13 @@ public interface QuestionDao extends Serializable {
     Question findOne(long id);
 
     @Insert
-    void insertAll(List<Question> questions);
-
-    @Insert
-    void insertOne(Question question);
+    long insertOne(Question question);
     @Delete
     void deleteOne(Question question);
+
+    @Update
+    void updateOne(Question question);
+
+    @Query("delete from Question")
+    void deleteAll();
 }

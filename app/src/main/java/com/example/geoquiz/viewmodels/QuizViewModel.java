@@ -41,7 +41,9 @@ public class QuizViewModel extends ViewModel {
     }
 
     public void setCurrentFinish() {
-        questions.get(index).finish = true;
+        Question question = questions.get(index);
+        question.finish = true;
+        questionDao.updateOne(question);
     }
 
     public boolean isCheat() {
@@ -49,18 +51,20 @@ public class QuizViewModel extends ViewModel {
     }
 
     public void setCheat() {
-        questions.get(index).cheat = true;
+        Question question = questions.get(index);
+        question.cheat = true;
+        questionDao.updateOne(question);
     }
 
     public void addQuestion(String question, boolean answer) {
         Question question0 = new Question(question, answer, true, false);
+        question0.id = questionDao.insertOne(question0);
         questions.add(question0);
-        questionDao.insertOne(question0);
     }
 
     public void addQuestion(Question question) {
+        question.id = questionDao.insertOne(question);
         questions.add(question);
-        questionDao.insertOne(question);
     }
 
     public Question getQuestion(int index) {
