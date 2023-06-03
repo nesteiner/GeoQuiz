@@ -1,4 +1,4 @@
-package com.example.geoquiz.activities;
+package com.example.geoquiz.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,14 +7,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.room.Room;
 import com.example.geoquiz.R;
 import com.example.geoquiz.databases.AppDatabase;
-import com.example.geoquiz.models.Question;
-import com.example.geoquiz.viewmodels.QuizViewModel;
+import com.example.geoquiz.viewmodel.QuizViewModel;
 
 import java.util.Locale;
 
@@ -28,7 +26,7 @@ public class StartActivity extends AppCompatActivity {
 
     static final String QUESTION_LENGTH = "com.example.geoquiz.start.question.length";
     static final int REQUSET_ACTIVITY_ADD = 0;
-    static AppDatabase database = null;
+    public static AppDatabase database = null;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

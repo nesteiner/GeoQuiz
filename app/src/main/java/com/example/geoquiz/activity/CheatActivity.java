@@ -1,4 +1,4 @@
-package com.example.geoquiz.activities;
+package com.example.geoquiz.activity;
 
 import android.app.Activity;
 import android.content.Intent;

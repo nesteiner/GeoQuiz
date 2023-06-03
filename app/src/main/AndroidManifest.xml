@@ -11,13 +11,13 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.GeoQuiz"
             tools:targetApi="31">
-        <activity android:name=".activities.AllActivity"
+        <activity android:name=".activity.AllActivity"
                   android:exported="false"/>
         <activity
-                android:name=".activities.CheckActivity"
+                android:name=".activity.CheckActivity"
                 android:exported="false"/>
         <activity
-                android:name=".activities.StartActivity"
+                android:name=".activity.StartActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -26,13 +26,13 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".activities.CheatActivity"
+                android:name=".activity.CheatActivity"
                 android:exported="false"/>
         <activity
-                android:name=".activities.AddActivity"
+                android:name=".activity.AddActivity"
                 android:exported="false"/>
         <activity
-                android:name=".activities.MainActivity"
+                android:name=".activity.MainActivity"
                 android:exported="false"/>
     </application>
 

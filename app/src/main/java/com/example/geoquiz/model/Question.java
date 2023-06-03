@@ -1,4 +1,4 @@
-package com.example.geoquiz.models;
+package com.example.geoquiz.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

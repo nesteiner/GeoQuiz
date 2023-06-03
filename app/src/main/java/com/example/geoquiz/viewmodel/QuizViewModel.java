@@ -1,11 +1,10 @@
-package com.example.geoquiz.viewmodels;
+package com.example.geoquiz.viewmodel;
 
 import android.content.Context;
 import androidx.lifecycle.ViewModel;
-import com.example.geoquiz.daos.QuestionDao;
-import com.example.geoquiz.models.Question;
+import com.example.geoquiz.dao.QuestionDao;
+import com.example.geoquiz.model.Question;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class QuizViewModel extends ViewModel {

@@ -4,20 +4,11 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              tools:context=".activities.AddActivity">
-
-    <EditText android:id="@+id/add_text"
-              android:layout_width="match_parent"
-              android:layout_height="0dp"
-              android:layout_weight="15"
-              android:inputType="textMultiLine"
-              android:hint="@string/input_topic"
-              android:textAlignment="gravity"
-              android:gravity="center|start"/>
+              tools:context=".activity.AddActivity">
 
     <fragment android:layout_width="match_parent"
-              android:layout_height="0dp"
+              android:layout_height="match_parent"
               android:name="com.example.geoquiz.fragment.FragmentAdd"
-              android:id="@+id/fragment_add"
-              android:layout_weight="15"/>
+              android:id="@+id/fragment_add"/>
+
 </LinearLayout>

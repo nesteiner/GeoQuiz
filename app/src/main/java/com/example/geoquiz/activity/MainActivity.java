@@ -1,4 +1,4 @@
-package com.example.geoquiz.activities;
+package com.example.geoquiz.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.geoquiz.R;
-import com.example.geoquiz.daos.QuestionDao;
+import com.example.geoquiz.dao.QuestionDao;
 import com.example.geoquiz.databases.AppDatabase;
-import com.example.geoquiz.viewmodels.QuizViewModel;
+import com.example.geoquiz.viewmodel.QuizViewModel;
 
 import java.util.Locale;
 
@@ -165,13 +165,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode != REQUEST_ACTIVITY_CHEAT) {
-            return;
-        } else {
+        if (requestCode == REQUEST_ACTIVITY_CHEAT) {
             if (resultCode == Activity.RESULT_OK) {
-                if (data == null) {
-                    return;
-                } else {
+                if (data != null) {
                     if (quizViewModel.currentFinish()) {
                         currentCheat = CheatActivity.wasCheat(data);
                     }

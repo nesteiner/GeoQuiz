@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.geoquiz.R;
-import com.example.geoquiz.models.Question;
+import com.example.geoquiz.model.Question;
 import com.example.geoquiz.viewholder.CheckViewHolder;
 import org.jetbrains.annotations.NotNull;
 

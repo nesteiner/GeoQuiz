@@ -1,7 +1,7 @@
-package com.example.geoquiz.daos;
+package com.example.geoquiz.dao;
 
 import androidx.room.*;
-import com.example.geoquiz.models.Question;
+import com.example.geoquiz.model.Question;
 
 import java.io.Serializable;
 import java.util.List;
