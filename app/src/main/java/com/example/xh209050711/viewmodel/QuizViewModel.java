@@ -1,9 +1,9 @@
-package com.example.geoquiz.viewmodel;
+package com.example.xh209050711.viewmodel;
 
 import android.content.Context;
 import androidx.lifecycle.ViewModel;
-import com.example.geoquiz.dao.QuestionDao;
-import com.example.geoquiz.model.Question;
+import com.example.xh209050711.dao.QuestionDao;
+import com.example.xh209050711.model.Question;
 
 import java.util.List;
 

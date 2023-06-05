@@ -1,4 +1,4 @@
-package com.example.geoquiz.activity;
+package com.example.xh209050711.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,10 +10,10 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.lifecycle.ViewModelProvider;
-import com.example.geoquiz.R;
-import com.example.geoquiz.dao.QuestionDao;
-import com.example.geoquiz.databases.AppDatabase;
-import com.example.geoquiz.viewmodel.QuizViewModel;
+import com.example.xh209050711.R;
+import com.example.xh209050711.dao.QuestionDao;
+import com.example.xh209050711.databases.AppDatabase;
+import com.example.xh209050711.viewmodel.QuizViewModel;
 
 import java.util.Locale;
 

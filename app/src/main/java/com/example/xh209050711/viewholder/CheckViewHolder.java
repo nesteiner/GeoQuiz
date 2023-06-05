@@ -1,10 +1,10 @@
-package com.example.geoquiz.viewholder;
+package com.example.xh209050711.viewholder;
 
 import android.view.View;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.geoquiz.R;
+import com.example.xh209050711.R;
 
 public class CheckViewHolder extends RecyclerView.ViewHolder {
     TextView title;

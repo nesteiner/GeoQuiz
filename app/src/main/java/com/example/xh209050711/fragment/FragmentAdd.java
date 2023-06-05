@@ -1,4 +1,4 @@
-package com.example.geoquiz.fragment;
+package com.example.xh209050711.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import com.example.geoquiz.R;
-import com.example.geoquiz.activity.StartActivity;
-import com.example.geoquiz.dao.QuestionDao;
-import com.example.geoquiz.model.Question;
+import com.example.xh209050711.R;
+import com.example.xh209050711.activity.StartActivity;
+import com.example.xh209050711.dao.QuestionDao;
+import com.example.xh209050711.model.Question;
 import org.jetbrains.annotations.NotNull;
 
 public class FragmentAdd extends Fragment {

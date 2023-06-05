@@ -1,4 +1,4 @@
-package com.example.geoquiz.activity;
+package com.example.xh209050711.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.geoquiz.R;
+import com.example.xh209050711.R;
 
 
 

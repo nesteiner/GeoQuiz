@@ -1,4 +1,4 @@
-package com.example.geoquiz.activity;
+package com.example.xh209050711.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.room.Room;
-import com.example.geoquiz.R;
-import com.example.geoquiz.databases.AppDatabase;
-import com.example.geoquiz.viewmodel.QuizViewModel;
+import com.example.xh209050711.R;
+import com.example.xh209050711.databases.AppDatabase;
+import com.example.xh209050711.viewmodel.QuizViewModel;
 
 import java.util.Locale;
 
